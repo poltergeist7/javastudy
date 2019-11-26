@@ -1,4 +1,6 @@
-#20191126 study
+# 20191126 study
+===
+
 
 ```
 const list = '[{"name":"eggs","price":1},{"name":"coffee","price":9.99},{"name":"rice","price":4.04},{"name":"brice","price":4.04},{"name":"arice","price":4.04}]'
@@ -7,7 +9,8 @@ const list = '[{"name":"eggs","price":1},{"name":"coffee","price":9.99},{"name":
 
 ```
 
-###자바스크립트와 JSON
+### 자바스크립트와 JSON
+---
 
 - JSON이란? 
 JSON은 자바스크립트의 객체 표기법을 제한하여 만든 텍스트 기반의 데이터 교환 표준이다.
@@ -22,3 +25,19 @@ JSON은 자바스크립트의 객체 표기법을 제한하여 만든 텍스트 
 
 ---------------
 
+
+
+### JSON.stringify() 메소드
+
+JSON.stringify() 메소드는 인수로 전달받은 자바 스크립트 객체를 문자열로 변환하여 반환한다.
+
+
+JSON.stringify(value, replacer, space)
+
+value(필수): JSON 문자열로 변환할 값이다. (배열, 객체, 또는 숫자, 문자 등)
+
+replacer(선택): 함수 또는 배열이 될 수 있다. 이 값이 null 이거나 제공되지 않으면 객체의 모든 속성들이 JSON 문자열 결과에 포함된다.
+
+```
+const 
+```

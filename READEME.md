@@ -89,11 +89,42 @@ console.log(fruits);        // Array [ "apple", "orange", "strawberry", "grapefr
 ```
 
 
-### Array.pop() 메소드
+### Array.filter() 메소드
 
-Array.pop() 메소드는 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열을 반환한다.
+Array.pop() 메소드는 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열을 반환한다. (이름 그대로 요소들을 걸러내는 것이 목적이다.)
 
 ```javascript
 
+// 정수 배열에서 5의 배수인 정수만 모으기
+const arr = [ 4, 5, 377, 400, 1024, 3000];
+const arr2 = arr.filter(function(n) {
+    return n % 5 == 0;
+});
+
+console.log(arr2);      // [ 5, 400, 3000]
+
 
 ```
+
+콜백 함수의 리턴은 boolean 을 가진다. 리턴이 true 인 요소만 모아서 새로운 배열을 만든다. 생략하게 된다면 리턴은 undefined 이므로 false 가 된다.
+만족하는 요소가 없을 시 빈 배열이 반환된다.
+
+```javascript
+
+const arr = [ 4, 377, 1024 ];
+const arr2 = arr.filter(function(n) {
+    returen n % 5 == 0;
+});
+console.log(arr2);      // []
+
+```
+
+ `undefiend`도 아닌 빈 배열을 반환하는 것은 매우 큰 의미이다. 보통 도메인을 해결하기 위해서 Array 메소드를 여러개 연결하여 사용하는데 빈ㄴ 배열이라도 반환 함으로써 중간에 오류가 나지 않고 다음 Array 메소드를 사용할 수 있다.
+
+
+
+
+
+
+
+
